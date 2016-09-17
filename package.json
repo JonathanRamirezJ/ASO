@@ -1,0 +1,35 @@
+{
+  "name": "AutomotiveServicesOnline",
+  "version": "1.0.0",
+  "description": "Website of AutomotiveServicesOnline.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanRamirezJ/ASO"
+  },
+  "keywords": [
+    "Angular",
+    "NodeJS",
+    "app",
+    "website"
+  ],
+  "author": "Jonathan Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonathanRamirezJ/ASO/issues"
+  },
+  "homepage": "https://github.com/JonathanRamirezJ/ASO/blob/master/README.md",
+  "devDependencies": {
+    "connect-history-api-fallback": "^1.3.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-stylus": "^2.5.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "gulp-webserver": "^0.9.1",
+    "nib": "^1.1.2"
+  },
+  "dependencies": {}
+}
