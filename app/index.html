@@ -1,21 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ejemplo</title>
+    <title>SAO-WebSite</title>
      <!-- bower:css -->
+     <link rel="stylesheet" href="lib/materialize/bin/materialize.css">
      <!-- endbower -->
      <!-- inject:css -->
-     <link rel="stylesheet" href="/stylesheets/main.css">
+     <link rel="stylesheet" href="/stylesheets/index.css">
      <!-- endinject -->
      <!-- Coloca favicon.ico y apple-touch-icon(s) en el directorio raíz -->
   </head>
   <body>
-    <h1>Hola mundo</h1>
+    <div class="header" ng-include="'components/header.html'"></div>
+    <div class="container" ng-include="'components/container.html'"></div>
+    <div class="footer" ng-include="'components/footer.html'"></div>
      <!-- bower:js -->
      <script src="lib/jquery/dist/jquery.js"></script>
-     <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+     <script src="lib/materialize/bin/materialize.js"></script>
      <script src="lib/angular/angular.js"></script>
      <script src="lib/angular-route/angular-route.js"></script>
      <script src="lib/angular-resource/angular-resource.js"></script>

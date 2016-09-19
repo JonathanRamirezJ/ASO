@@ -28,7 +28,7 @@ gulp.task('server', function() {
 
 // Busca errores en el JS y nos los muestra por pantalla
 gulp.task('jshint', function() {
- return gulp.src('./app/scripts/main.js')
+ return gulp.src('./app/scripts/**/*.js')
    .pipe(jshint('.jshintrc'))
    .pipe(jshint.reporter('jshint-stylish'))
    .pipe(jshint.reporter('fail'));
@@ -36,7 +36,7 @@ gulp.task('jshint', function() {
 
 // Preprocesa archivos Stylus a CSS y recarga los cambios
 gulp.task('css', function() {
-  gulp.src('./app/stylesheets/main.styl')
+  gulp.src('./app/stylesheets/index.styl')
     .pipe(stylus({ use: nib() }))
     .pipe(gulp.dest('./app/stylesheets'))
     .pipe(connect.reload());
