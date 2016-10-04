@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en" ng-app="">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SAO-WebSite</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!-- bower:css -->
      <link rel="stylesheet" href="lib/materialize/bin/materialize.css">
      <!-- endbower -->
@@ -12,18 +13,22 @@
      <!-- endinject -->
      <!-- Coloca favicon.ico y apple-touch-icon(s) en el directorio raíz -->
   </head>
-  <body>
-    <div class="header" ng-include="'components/header.html'"></div>
-    <div class="container" ng-include="'components/container.html'"></div>
-    <div class="footer" ng-include="'components/footer.html'"></div>
+  <body ng-app="myApp">
+    <div class="contenido" ng-include="'components/header.html'"></div>
+    <main ng-view></main>
+    <div class="contenido-footer" ng-include="'components/footer.html'"></div>
      <!-- bower:js -->
      <script src="lib/jquery/dist/jquery.js"></script>
      <script src="lib/materialize/bin/materialize.js"></script>
      <script src="lib/angular/angular.js"></script>
+     <script src="lib/angular-resource/angular-resource.js"></script>
      <script src="lib/angular-route/angular-route.js"></script>
      <script src="lib/angular-resource/angular-resource.js"></script>
      <!-- endbower -->
      <!-- inject:js -->
+     <script src="/scripts/functionsMaterialize.js"></script>
+     <script src="/scripts/home.js"></script>
+     <script src="/scripts/howMuch.js"></script>
      <script src="/scripts/main.js"></script>
      <!-- endinject -->
   </body>

@@ -1,2 +1,52 @@
-header
-  background: #ccc;
+.contenido
+  position: relative
+  z-index: 999
+.nav
+  width 95%
+  position relative
+  margin 30px
+
+.nav-wrapper
+  a
+    color white
+    text-decoration none
+  ul
+    li
+      &:hover
+        background #d32f2f
+        transition all 0.45s
+
+.brand-logo
+  font-size 1rem
+  margin-left 20px
+
+.material-icons
+  margin-left 20px
+
+@media only screen and (max-width: 480px)
+  .nav
+    width 80%
+    position relative
+    margin 30px
+    border-radius 20px
+
+@media only screen and (min-width: 481px) and (max-width: 640px)
+  .nav
+    width 85%
+    position relative
+    margin 30px
+    border-radius 20px
+
+@media only screen and (min-width: 641px) and (max-width: 768px)
+  .nav
+    width 90%
+    position relative
+    margin 30px
+    border-radius 20px
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+  .nav
+    width 95%
+    position relative
+    margin 30px
+    border-radius 20px
