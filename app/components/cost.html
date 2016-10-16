@@ -1,48 +1,62 @@
 <!-- Jony Component-->
+<div class="parallax-container" ng-init="init()">
+  <h1 class="header center white-text title-center">Costos</h1>
+  <div class="parallax"><img src="image/costos.jpg"></div>
+</div>
 <div class="cost-content">
+  <div class="container">
+    <h2 class="header center title-general"><i class="material-icons">dialpad</i> Calculadora de Costos Rapidos</h2>
+  </div>
+
   <div class="row howMuch">
     <div class="content-principal">
-      <div class="col s12 m6 l6 white">
+      <div class="col s12 m5 l5 white">
         <div class="row" ng-repeat="data in datosResource">
           <ul class="collection">
             <li>
-              <a ng-click="myFunction($index)" class="waves-effect waves-light btn-large red btn-sao">{{data.title}}</a>
+              <a ng-click="getCost(data.title, data.cost, data.img)" href="#/costos" class="waves-effect waves-light btn-large red btn-sao">{{data.title}}</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="col s12 m6 l6">
+      <div class="col s12 m7 l7">
         <div class="row show-cost white">
-          <div class="row title-cost">Presupuesto</div>
+          <div class="row title-cost">Presupuesto de {{titleCost}}</div>
           <div class="row content-cost">
-            <table>
-              <thead>
-                <tr>
-                  <th data-field="id">Content</th>
-                  <th data-field="name">Description</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Consulting</td>
-                  <td>Lorem ipsum dolor sit amet</td>
-                </tr>
-                <tr>
-                  <td>E-learning</td>
-                  <td>Lorem ipsum dolor sit amet</td>
-                </tr>
-                <tr>
-                  <td>E-learning</td>
-                  <td>Lorem ipsum dolor sit amet</td>
-                </tr>
-                <tr>
-                  <td>E-learning</td>
-                  <td>Lorem ipsum dolor sit amet</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="content-total">
-              <div class="title-total-cost green darken-2">Total: $40,000</div>
+            <div class="col s12 m6 l6">
+              <img ng-src="{{imageCost}}" alt="imageCost" width="300px">
+              <img ng-src="{{imageCost}}" alt="imageCost" width="300px">
+            </div>
+            <div class="col s12 m6 l6">
+              <table class="bordered responsive-table">
+                <thead>
+                  <tr>
+                    <th data-field="id">Content</th>
+                    <th data-field="name">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Consulting</td>
+                    <td>Lorem ipsum dolor sit amet</td>
+                  </tr>
+                  <tr>
+                    <td>E-learning</td>
+                    <td>Lorem ipsum dolor sit amet</td>
+                  </tr>
+                  <tr>
+                    <td>E-learning</td>
+                    <td>Lorem ipsum dolor sit amet</td>
+                  </tr>
+                  <tr>
+                    <td>E-learning</td>
+                    <td>Lorem ipsum dolor sit amet</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="content-total">
+                <div class="title-total-cost green darken-2">Total: $ {{precioCost}}</div>
+              </div>
             </div>
           </div>
         </div>

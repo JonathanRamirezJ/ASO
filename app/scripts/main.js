@@ -54,7 +54,8 @@ app.config(['$routeProvider','$translateProvider',function($routeProvider , $tra
         templateUrl : 'components/home.html'
     })
     .when('/somos', {
-        templateUrl : 'components/somos.html'
+        templateUrl : 'components/somos.html',
+        controller: 'somosController'
     })
     .when('/ofrecemos', {
         templateUrl : 'components/ofrecemos.html',
@@ -65,7 +66,8 @@ app.config(['$routeProvider','$translateProvider',function($routeProvider , $tra
         controller: 'elementsController'
     })
     .when('/aviso', {
-        templateUrl : 'components/avisoP.html'
+        templateUrl : 'components/avisoP.html',
+        controller: 'avisoController'
     })
     .when('/about', {
         templateUrl : 'components/about.html'
@@ -79,13 +81,6 @@ app.config(['$routeProvider','$translateProvider',function($routeProvider , $tra
     });
 }]);
 
-// Factory
-app.factory('MyService', function(){
-    return{
-        data:{}
-    };
-});
-
 app.controller('Ctrl', function($scope, $translate) {
   $scope.changeLanguage = function(key){
     $translate.use(key);
@@ -94,11 +89,25 @@ app.controller('Ctrl', function($scope, $translate) {
 });
 
 // Jony Component
+app.factory('serviceCost', function(){
+    return{
+        data:{}
+    };
+});
 
-app.controller('elementsController', function ($scope, dataResource) {
+app.controller('elementsController', function ($scope, dataResource, $location , serviceCost) {
     $scope.datosResource = dataResource.get();
-    $scope.myFunction = function(index) {
-      console.log('Index selecionado: '+index);
+    $scope.getCost = function (title , precio, image){
+        serviceCost.data.titlee = title;
+        serviceCost.data.precio = precio;
+        serviceCost.data.image = image;
+        $location.url('components/cost.html');
+    };
+    $scope.titleCost = serviceCost.data.titlee;
+    $scope.precioCost = serviceCost.data.precio;
+    $scope.imageCost = serviceCost.data.image;
+    $scope.init = function () {
+      $('.parallax').parallax();
     };
 });
 
@@ -111,11 +120,20 @@ app.factory('dataResource', function ($resource) {
 
 
 // Julio component
+app.factory('MyService', function(){
+    return{
+        data:{}
+    };
+});
+
 app.controller('MyController', ['$scope', '$location', 'MyService', function($scope, $location, MyService){
     $scope.goto = function (param, img){
         MyService.data.ruta = param;
         MyService.data.urlimg = img;
         $location.url('components/detail.html');
+    };
+    $scope.init = function () {
+      $('.parallax').parallax();
     };
     $scope.conts = [
         {
@@ -152,7 +170,7 @@ app.controller('MyController', ['$scope', '$location', 'MyService', function($sc
       },
       {
 
-         imagen: 'image/home-real.jpg',
+         imagen: 'image/cv.jpg',
          titulouno: 'CV',
          more: 'more_vert',
          enlace: 'este es un enlace',
@@ -168,3 +186,18 @@ app.controller('dtailscontroller',['$scope', 'MyService', function($scope, MySer
     $scope.mensage = MyService.data.ruta;
     $scope.img = MyService.data.urlimg;
 }]);
+
+
+// Somos Component
+app.controller('somosController', function($scope) {
+  $scope.init = function () {
+    $('.parallax').parallax();
+  };
+});
+
+//avisoController
+app.controller('avisoController', function($scope) {
+  $scope.init = function () {
+    $('.parallax').parallax();
+  };
+});

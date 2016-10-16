@@ -16,6 +16,15 @@
   <body ng-app="myApp">
     <div class="contenido" ng-include="'components/header.html'"></div>
     <main ng-view></main>
+    <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;" ng-controller="Ctrl">
+      <a class="btn-floating btn-large red">
+        <i class="material-icons">language</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating" ng-click="changeLanguage('es')"><img src="image/icon/icono_mexico.png" alt="español" width="40px"></a></li>
+        <li><a class="btn-floating" ng-click="changeLanguage('en')"><img src="image/icon/ico_usa.png" alt="ingles" width="40px"></a></li>
+      </ul>
+    </div>
     <div class="contenido-footer" ng-include="'components/footer.html'"></div>
      <!-- bower:js -->
      <script src="lib/jquery/jquery-2.2.4.js"></script>

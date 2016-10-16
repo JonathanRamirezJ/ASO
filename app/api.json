@@ -2,28 +2,33 @@
   {
     "id":1,
     "title":"SAO-Services Automotive Online",
-    "cost":"40000",
+    "cost":"40,000",
+    "img": "image/consulting.jpg",
     "content":"lorem-SAO1",
     "description":"tercero"
   },
   {
     "id":2,
     "title":"SAO-Consulting",
-    "cost":"30000",
+    "cost":"30,000",
+    "img": "image/home-real.jpg",
     "content":"lorem-SAO2",
     "description":"tercero"
   },
   {
     "id":3,
     "title":"SAO-Mercadotecnia",
-    "cost":"20000",
+    "cost":"20,000",
+    "img": "image/car-market.jpg",
     "content":"lorem-SAO3",
     "description":"tercero"
   },
   {
     "id":3,
-    "title":"SAO-Recrusos Humanos",
-    "cost":"10000", "content":"lorem-SAO4",
+    "title":"SAO-Recursos Humanos",
+    "img": "image/home-real.jpg",
+    "cost":"10,000",
+    "content":"lorem-SAO4",
     "description":"Primero"
   }
 ]
