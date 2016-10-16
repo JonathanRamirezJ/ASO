@@ -12,7 +12,7 @@ app.config(['$routeProvider','$translateProvider',function($routeProvider , $tra
             TITULO1:'Renault',
 	          TITULO2: 'Home',
             TITULO3: ' Who are we?',
-            TITULO4: ' What we offer?',
+            TITULO4: ' Offered',
             TITULO5: ' Cost of service',
             TITULO6: 'Notice of privacy',
             TITULO7: 'Mision',
