@@ -1,65 +1,26 @@
-body {
-  background-image: url("../image/pic9.jpg");
+.parallax-container {
+  height: 800px;
 }
-background-repeat: no-repeat {
-  background-attachment: fixed;
-  background-size: cover;
+@media (max-width: 448px) {
+  .parallax-container {
+    height: 660px;
+  }
+}
+.text-main-home {
+  margin-top: 100px;
+}
+.text-justify {
+  text-align: justify;
 }
 .contenido {
-  position: relative;
+  width: 100%;
   z-index: 999;
-}
-.nav {
-  width: 95%;
-  position: relative;
-  margin: 30px;
-}
-.nav-wrapper a {
-  color: #fff;
-  text-decoration: none;
+  position: fixed;
+  top: 0;
 }
 .nav-wrapper ul li:hover {
   background: #d32f2f;
   transition: all 0.45s;
-}
-.brand-logo {
-  font-size: 1rem;
-  margin-left: 20px;
-}
-.material-icons {
-  margin-left: 20px;
-}
-@media only screen and (max-width: 480px) {
-  .nav {
-    width: 80%;
-    position: relative;
-    margin: 30px;
-    border-radius: 20px;
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 640px) {
-  .nav {
-    width: 85%;
-    position: relative;
-    margin: 30px;
-    border-radius: 20px;
-  }
-}
-@media only screen and (min-width: 641px) and (max-width: 768px) {
-  .nav {
-    width: 90%;
-    position: relative;
-    margin: 30px;
-    border-radius: 20px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .nav {
-    width: 95%;
-    position: relative;
-    margin: 30px;
-    border-radius: 20px;
-  }
 }
 footer {
   color: #fff;
@@ -68,6 +29,9 @@ footer {
 input,
 label {
   color: #fff;
+}
+.page-footer {
+  margin-top: 0 !important;
 }
 .responsive-img {
   padding-left: 8px;
@@ -85,6 +49,9 @@ label {
 .icon-social {
   display: inline-block;
   margin: 10px;
+}
+.cost-content {
+  margin-top: 100px;
 }
 body {
   background: #eceff1;
@@ -131,6 +98,20 @@ body {
   position: relative;
   top: 30px;
 }
+.title-general {
+  width: 100%;
+  padding: 10px;
+  color: #bf360c;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  top: 10px;
+}
+.aviso-content {
+  margin-top: 100px;
+}
 .body-aviso {
   background-image: url("../image/interior.jpg");
 }
@@ -158,6 +139,9 @@ background-repeat: no-repeat {
   font-size: 12px;
   color: #fff;
 }
+.somos-content {
+  margin-top: 100px;
+}
 .somos .row {
   margin-top: 50px;
 }
@@ -173,9 +157,28 @@ background-repeat: no-repeat {
   height: 6px;
   background-color: #b71c1c;
 }
+.somos-img-about {
+  margin-top: 25px;
+}
+.center-img {
+  text-align: center;
+}
+@media (max-width: 448px) {
+  .center-img img {
+    width: 300px;
+  }
+}
+.ofrecemos-content {
+  margin-top: 100px;
+}
 .sao {
   width: 100%;
   border-radius: 20px;
   color: #fff;
-  margin: 20px;
+}
+.detail-content {
+  margin-top: 100px;
+}
+.detail-btn {
+  width: 100%;
 }

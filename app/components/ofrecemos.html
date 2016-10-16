@@ -1,111 +1,57 @@
 <!-- Julio Component-->
-<div class="row">
-    <div class="center-align z-depth-3 sao red darken-4">
-        SAO 1
-    </div>
-</div>
-<div class="row">
-  <div class="col s12 m4">
-      <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="image/todoterreno.jpg">
-          </div>
-          <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-      </div>
-  </div>
-  <div class="col s12 m4 ">
-      <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="image/car.jpg">
-          </div>
-          <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-      </div>
-  </div>
-  <div class="col s12 m4 ">
-      <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="image/car.jpg">
-          </div>
-          <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-      </div>
-  </div>
-</div>
- <div class="row">
-    <div>
+<div class="ofrecemos-content">
 
-    </div>
-</div>
-<div class="row">
-    <div class="center-align z-depth-3 sao red darken-4">
-        SAO 2
-    </div>
-</div>
+  <div class="container" >
 
-<div class="row">
-  <div class="col s12 m4 ">
-      <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="image/todoterreno.jpg">
-          </div>
-          <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
+    <div class="row">
+      <div class="col s12 m12 l12">
+          <div class="sao red center">SAO Consulting</div>
       </div>
-  </div>
-  <div class="col s12 m4 ">
-      <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="image/car.jpg">
-          </div>
-          <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
+    </div>
+
+      <div class="row" >
+            <div class="col s12 m6 l4" ng-repeat="cont in conts">
+                <div class="card hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" ng-src="{{cont.imagen}}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">{{cont.titulouno}}<i class="material-icons right">{{cont.more}}</i></span>
+                        <p><a href="#">{{cont.enlace}}</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">{{cont.titulodos}}<i class="material-icons right">{{cont.cerrar}}</i></span>
+                        <p>{{cont.paragraph}}</p>
+                        <a href="#/detail" class="detail-btn waves-effect waves-light red btn" ng-click="goto(cont.titulouno, cont.imagen)">{{cont.button}}</a>
+                    </div>
+                </div>
+            </div>
       </div>
-  </div>
-  <div class="col s12 m4 ">
-      <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="image/todoterreno.jpg">
-          </div>
-          <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
+
+      <div class="row">
+        <div class="col s12 m12 l12">
+            <div class="center sao red ">SAO Recursos Humanos </div>
+        </div>
       </div>
+
+      <div class="row" >
+        <div class="col s12 m6 l4" ng-repeat="cont in conts">
+            <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" ng-src="{{cont.imagen}}">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">{{cont.titulouno}}<i class="material-icons right">{{cont.more}}</i></span>
+                    <p><a href="#">{{cont.enlace}}</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">{{cont.titulodos}}<i class="material-icons right">{{cont.cerrar}}</i></span>
+                    <p>{{cont.paragraph}}</p>
+<a href="#/detail" class="detail-btn waves-effect waves-light red btn" ng-click="goto(cont.titulouno, cont.imagen)">{{cont.button}}</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
   </div>
 </div>

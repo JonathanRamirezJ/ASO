@@ -1,47 +1,49 @@
 <!-- Jony Component-->
-<div class="row howMuch">
-  <div class="content-principal">
-    <div class="col s12 m6 l6 white">
-      <div class="row" ng-repeat="data in datosResource">
-        <ul class="collection">
-          <li>
-            <a ng-click="myFunction($index)" class="waves-effect waves-light btn-large red btn-sao">{{data.title}}</a>
-          </li>
-        </ul>
+<div class="cost-content">
+  <div class="row howMuch">
+    <div class="content-principal">
+      <div class="col s12 m6 l6 white">
+        <div class="row" ng-repeat="data in datosResource">
+          <ul class="collection">
+            <li>
+              <a ng-click="myFunction($index)" class="waves-effect waves-light btn-large red btn-sao">{{data.title}}</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="col s12 m6 l6">
-      <div class="row show-cost white">
-        <div class="row title-cost">Presupuesto</div>
-        <div class="row content-cost">
-          <table>
-            <thead>
-              <tr>
-                <th data-field="id">Content</th>
-                <th data-field="name">Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Consulting</td>
-                <td>Lorem ipsum dolor sit amet</td>
-              </tr>
-              <tr>
-                <td>E-learning</td>
-                <td>Lorem ipsum dolor sit amet</td>
-              </tr>
-              <tr>
-                <td>E-learning</td>
-                <td>Lorem ipsum dolor sit amet</td>
-              </tr>
-              <tr>
-                <td>E-learning</td>
-                <td>Lorem ipsum dolor sit amet</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="content-total">
-            <div class="title-total-cost green darken-2">Total: $40,000</div>
+      <div class="col s12 m6 l6">
+        <div class="row show-cost white">
+          <div class="row title-cost">Presupuesto</div>
+          <div class="row content-cost">
+            <table>
+              <thead>
+                <tr>
+                  <th data-field="id">Content</th>
+                  <th data-field="name">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Consulting</td>
+                  <td>Lorem ipsum dolor sit amet</td>
+                </tr>
+                <tr>
+                  <td>E-learning</td>
+                  <td>Lorem ipsum dolor sit amet</td>
+                </tr>
+                <tr>
+                  <td>E-learning</td>
+                  <td>Lorem ipsum dolor sit amet</td>
+                </tr>
+                <tr>
+                  <td>E-learning</td>
+                  <td>Lorem ipsum dolor sit amet</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="content-total">
+              <div class="title-total-cost green darken-2">Total: $40,000</div>
+            </div>
           </div>
         </div>
       </div>

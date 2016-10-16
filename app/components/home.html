@@ -1,25 +1,115 @@
+<!--<div class="slider fullscreen">
+  <ul class="slides">
+    <li>
+      <img src="image/pic13.jpg">
+      <div class="caption center-align">
+        <h2>Wellcome To...</h2>
+      </div>
+    </li>
+    <li>
+      <img src="image/pic12.jpg">
+      <div class="caption left-align">
+        <h3>Mira nuestros servicios</h3>
+        <h5 class="light grey-text text-lighten-3">Siempre de la más alta calidad</h5>
+      </div>
+    </li>
+    <li>
+      <img src="image/pic3.jpg">
+      <div class="caption right-align">
+        <h3>Seguridad y confianza</h3>
+        <h5 class="light grey-text text-lighten-3">Nuestros clientes son lo más importante.</h5>
+      </div>
+    </li>
+  </ul>
+</div>-->
+<div class="parallax-container">
 	<div class="slider fullscreen">
-    <ul class="slides">
-      <li>
-        <img src="image/pic13.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h2>Wellcome To...</h2>
-        </div>
-      </li>
-      <li>
-        <img src="image/pic12.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Mira nuestros servicios</h3>
-          <h5 class="light grey-text text-lighten-3">Siempre de la más alta calidad</h5>
-        </div>
-      </li>
-      <li>
-        <img src="image/pic3.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h3>Seguridad y confianza</h3>
-          <h5 class="light grey-text text-lighten-3">Nuestros clientes son lo más importante.</h5>
-        </div>
-      </li>
-    </ul>
+	  <ul class="slides">
+	    <li>
+	      <img src="image/pic13.jpg">
+	      <div class="caption center text-main-home">
+			    <h1 class="header center blue-grey-text text-lighten-5">SAO Conculting</h1>
+			    <div class="row center">
+			      <h5 class="header col s12 white-text">A modern responsive front-end framework based on Material Design</h5>
+			    </div>
+			    <div class="row center">
+			      <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+			    </div>
+	      </div>
+	    </li>
+	    <li>
+	      <img src="image/pic12.jpg">
+	      <div class="caption left-align">
+	        <h3>Mira nuestros servicios</h3>
+	        <h5 class="light grey-text text-lighten-3">Siempre de la más alta calidad</h5>
+	      </div>
+	    </li>
+	    <li>
+	      <img src="image/pic3.jpg">
+	      <div class="caption right-align">
+	        <h3>Seguridad y confianza</h3>
+	        <h5 class="light grey-text text-lighten-3">Nuestros clientes son lo más importante.</h5>
+	      </div>
+	    </li>
+	  </ul>
+	</div>
+</div>
+
+<div class="section white">
+  <div class="row container">
+    <h2 class="header center title-general">¿Que Ofrecemos?</h2>
+    <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
   </div>
-	<script src="/scripts/functionsMaterialize.js"></script>
+</div>
+
+<div class="parallax-container">
+  <div class="parallax"><img src="image/car-market.jpg"></div>
+</div>
+
+<div class="section white">
+  <div class="row container">
+    <h2 class="header center title-general">Nuestros Servicios</h2>
+    <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+  </div>
+</div>
+
+<div class="parallax-container">
+  <div class="parallax"><img src="image/home1.jpg"></div>
+</div>
+
+<div class="section white">
+  <div class="row container">
+    <h2 class="header center title-general">Nuestros Clientes</h2>
+	  <div class="row">
+      <div class="col s6 m4 l2">
+        <img src="image/rock.png" class="img-somos">
+      </div>
+      <div class="col s6 m4 l2">
+        <img src="image/rena.jpg" class="img-somos">
+      </div>
+      <div class="col s6 m4 l2">
+        <img src="image/planet.jpg" class="img-somos">
+      </div>
+			<div class="col s6 m4 l2">
+        <img src="image/rock.png" class="img-somos">
+      </div>
+      <div class="col s6 m4 l2">
+        <img src="image/rena.jpg" class="img-somos">
+      </div>
+      <div class="col s6 m4 l2">
+        <img src="image/planet.jpg" class="img-somos">
+      </div>
+	  </div>
+  </div>
+</div>
+
+<div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;" ng-controller="Ctrl">
+  <a class="btn-floating btn-large red">
+    <i class="material-icons">language</i>
+  </a>
+  <ul>
+    <li><a class="btn-floating" ng-click="changeLanguage('es')"><img src="image/icon/icono_mexico.png" alt="español" width="40px"></a></li>
+    <li><a class="btn-floating" ng-click="changeLanguage('en')"><img src="image/icon/ico_usa.png" alt="ingles" width="40px"></a></li>
+  </ul>
+</div>
+<script src="/scripts/functionsMaterialize.js"></script>
