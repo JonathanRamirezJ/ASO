@@ -30,6 +30,15 @@ input,
 label {
   color: #fff;
 }
+span {
+  color: #f00;
+}
+.btn {
+  color: #fff;
+}
+.contactanos {
+  margin-top: 10px;
+}
 .page-footer {
   margin-top: 0 !important;
 }

@@ -17,10 +17,7 @@
 	  				<p class="texto" translate="TITULO13"></p>
 	  			</div>
 	  			<div class="col s12 m12 l12">
-	  				<input type="text" id="correo" name="correo" placeholder="E-mail">
-	  			</div>
-	  			<div class="col s12 m12 l12">
-	  				<a class="waves-effect red btn modal-trigger" href="#modal1" translate="TITULO13"> </a>
+	  				<a class="waves-effect red btn modal-trigger" href="#contactanos" translate="TITULO13"> </a>
 	  			</div>
 
 	  		</div>
@@ -33,13 +30,22 @@
   	</div>
 </footer>
 
-<!-- Modal Structure -->
-  <div id="modal1" class="modal">
+<!-- Modal contactanos -->
+<div id="contactanos" class="modal" ng-controller="controllerContacto">
+  <form name="formContacto" novalidate>
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h4>Contáctanos</h4>
+      <p>Nombre:<input type="text" name="nombre" placeholder="Nombre"  ng-model="nombre" required>
+      <span ng-show="formContacto.nombre.$error.required">Nombre Obligatorio</span>
+      <p>Correo:</p><input type="email" name="email" placeholder="Correo" ng-model="email" required>
+      <span ng-show="formContacto.email.$error.required">Correo Obligatorio</span>
+      <span ng-show="formContacto.email.$error.email">Correo inválido</span>
+      <p>Comentario:</p><input type="text" name="comentario" placeholder="Comentario" ng-model="comentario" class="materialize-textarea" required>
+      <span ng-show="formContacto.comentario.$error.required">Comentario Obligatorio</span>
     </div>
     <div class="modal-footer">
-      <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <input type="submit" class="waves-effect red btn" value="cancelar" ng-click="btnCancelar()">
+      <input type="submit" class="waves-effect green btn" value="Enviar" ng-click="btnEnviar()" ng-disabled="formContacto.$invalid">
     </div>
-  </div>
+  </form>
+</div>
