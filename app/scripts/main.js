@@ -110,7 +110,19 @@ app.controller('elementsController', function ($scope, dataResource, $location ,
       $('.parallax').parallax();
     };
 });
-
+/*--------carlos component----------*/
+app.controller('controllerContacto', function ($scope){
+    $scope.btnCancelar = function(){
+        $scope.nombre='';
+        $scope.email='';
+        $scope.comentario='';
+        $('#contactanos').closeModal();
+    }
+    $scope.btnEnviar = function(){
+        console.log("Enviado");
+    }
+});
+/*-----------------------------------*/
 app.factory('dataResource', function ($resource) {
   return $resource('../api.json',
       {},
